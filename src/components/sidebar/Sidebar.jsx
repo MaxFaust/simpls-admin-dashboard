@@ -3,17 +3,17 @@ import {
   LineStyle,
   Timeline,
   TrendingUp,
-  PermIdentity,
-  Storefront,
-  AttachMoney,
   BarChart,
   MailOutline,
   DynamicFeed,
   ChatBubbleOutline,
   WorkOutline,
   Report,
+  Schedule,
+  KitchenRounded,
+  MenuBookRounded,
 } from "@material-ui/icons";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   return (
@@ -37,19 +37,19 @@ export default function Sidebar() {
           </ul>
         </div>
         <div className="sidebarMenu">
-          <h3 className="sidebarTitle">Quick Menu</h3>
+          <h3 className="sidebarTitle">Production</h3>
           <ul className="sidebarList">
               <li className="sidebarListItem">
-                <PermIdentity className="sidebarIcon" />
-                Users
-              </li>
-              <li className="sidebarListItem">
-                <Storefront className="sidebarIcon" />
+                <KitchenRounded className="sidebarIcon" />
                 Products
               </li>
+              <li className="sidebarListItem">
+                <Schedule className="sidebarIcon" />
+                Schedule
+              </li>
             <li className="sidebarListItem">
-              <AttachMoney className="sidebarIcon" />
-              Transactions
+              <MenuBookRounded className="sidebarIcon" />
+              Recipes
             </li>
             <li className="sidebarListItem">
               <BarChart className="sidebarIcon" />
